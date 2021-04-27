@@ -2,7 +2,7 @@ import edu.fcps.Turtle;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-//Name: Dev Kodre
+//@Author Dev Kodre
 //Period: 2
 //Date: 4/26/21
 
@@ -11,13 +11,29 @@ import java.awt.event.*;
 * Allows the user to run a simulation based on players selected.
 *
 *
-* @param start_Button
-* @param cancel_Button
-* @param JComboBox Drop down menu
-* @param teamScore_Label
-* @param playerScore_Label
-* @param Directions_Label 
-  
+* @param start_Button  Executes simulation of game between players selected.
+* @param cancel_Button Terminates simulation after start button is pressed.
+* @param JComboBox Drop down menu to select players
+* @param SelectButton   selects the player highlighted in the JComboBox
+* @param team1Score_Label   Displays total score for team one 
+* @param team2Score_Label   Displays total score for team two
+*
+* Displays points scored, scoring ratio for 2 pointers and 3 pointers for each player
+*
+* @param team1p1Stats_Label 
+* @param team1p2Stats_Label
+* @param team1p3Stats_Label
+* @param team1p4Stats_Label
+* @param team1p5Stats_Label
+*
+* @param team2p1Stats_Label
+* @param team2p2Stats_Label
+* @param team2p3Stats_Label
+* @param team2p4Stats_Label
+* @param team2p5Stats_Label
+
+* @param Directions_Label  Information on how to run the simulation
+   
 */
 public class AllStarPanel extends JPanel {
   
@@ -125,6 +141,23 @@ public class AllStarPanel extends JPanel {
       public void actionPerformed(ActionEvent e)
       {
            
+      }
+   }
+  /**
+   * Removes most recent player selected
+   *
+   *
+   */
+   private class DeletePressed implements ActionListener
+   {
+   /**
+   * Removes player selected from the team
+   *
+   * @param actionEvent e
+   */
+      public void actionPerformed(ActionEvent e)
+      {
+            
       }
    }
 }
